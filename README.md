@@ -91,14 +91,10 @@ java -cp src Main
 🧩 Objetivo do Repositório
 
 Este repositório serve como:
-
-Meu portfólio pessoal de aprendizado em Java
-
-Um espaço para experimentar novas ideias
-
-Um "diário" de evolução como desenvolvedor
-
-Um repositório público para ajudar outros iniciantes
+- Meu portfólio pessoal de aprendizado em Java
+- Um espaço para experimentar novas ideias
+- Um "diário" de evolução como desenvolvedor
+- Um repositório público para ajudar outros iniciantes
 
 Sinta-se à vontade para explorar, dar sugestões ou abrir issues! 😊
 
@@ -106,6 +102,7 @@ Sinta-se à vontade para explorar, dar sugestões ou abrir issues! 😊
 
 Se quiser trocar uma ideia sobre Java, Dev Containers ou programação no geral:
 
-Marcus Silva
+
 🔗 GitHub: marcusteixeirabr
+
 📧 E-mail marcusteixeirabr@gmail.com
