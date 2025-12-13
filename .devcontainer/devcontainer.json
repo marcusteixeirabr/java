@@ -24,11 +24,13 @@
         "java.configuration.runtimes": [
           {
             "name": "JavaSE-21",
-            "path": "/usr/lib/jvm/jdk-21"
+            "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+            "default": true
           }
         ],
         "java.import.gradle.enabled": true,
-        "java.maven.downloadSources": true
+        "java.maven.downloadSources": true,
+        "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64"
       }
     }
   },
