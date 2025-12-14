@@ -17,5 +17,6 @@ public class Main {
         } else {
             System.out.println("menor de idade.");
         }
+        teclis.close();
     }
 }
