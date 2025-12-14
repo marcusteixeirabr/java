@@ -26,19 +26,19 @@
         "java.configuration.runtimes": [
           {
             "name": "JavaSE-21",
-            "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+            "path": "/opt/java/openjdk",
             "default": true
           }
         ],
         "java.import.gradle.enabled": true,
         "java.maven.downloadSources": true,
-        "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64"
+        "java.jdt.ls.java.home": "/opt/java/openjdk"
       }
     }
   },
 
-  // Opcional: instala ferramentas extras após subir o container
-  "postCreateCommand": "sdkman-init && java -version && mvn -v || true",
+  // Valida ferramentas após subir o container
+  "postCreateCommand": "java -version && mvn -v",
 
   "remoteUser": "root"
 }
