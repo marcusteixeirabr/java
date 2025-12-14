@@ -12,6 +12,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "vscjava.migrate-java-to-azure",
+        "vscjava.vscode-java-upgrade",
         "vscjava.vscode-java-pack",
         "vscjava.vscode-gradle",
         "vscjava.vscode-java-debug",
