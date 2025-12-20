@@ -13,7 +13,10 @@ public class Service {
                 System.out.print("Digite um número válido: ");
                 continue;
             }
-            if (answer >= min && answer <= max) return answer;
+            if (answer >= min && answer <= max) {
+                scanner.close();
+                return answer;
+            }
             System.out.print("Digite um número válido: ");
         } while (true);
     }

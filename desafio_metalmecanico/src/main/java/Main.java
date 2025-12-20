@@ -46,6 +46,6 @@ public class Main {
         System.out.printf("Total do frete: R$ %.2f\n", frete1.calculateTotalFreight());
         System.out.println("-=-=-=-=-=-=".repeat(5));
 
-
+        scanner.close();
     }
 }
