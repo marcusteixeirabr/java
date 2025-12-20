@@ -14,25 +14,25 @@ class Carro {
 }
 
 // Cria o comparador
-class SortByYear implements Comparator {
+class SortByYear implements Comparator<Carro> {
 
-    public int compare(Object obj1, Object obj2) {
-        Carro a = (Carro) obj1;
-        Carro b = (Carro) obj2;
+    public int compare(Carro a, Carro b) {
+        // Carro a = (Carro) obj1;
+        // Carro b = (Carro) obj2;
 
         // Compara o ano dos dois objetos. Pode-se usar return Integer.compare(a.ano, b.ano);
-        if (a.ano < b.ano) return - 1; // O primeiro carro é mais novo
-        if (a.ano > b.ano) return 1;   // O primeiro carro é mais velho
-        return 0;
+        // if (a.ano < b.ano) return - 1; // O primeiro carro é mais novo
+        // if (a.ano > b.ano) return 1;   // O primeiro carro é mais velho
+        return Integer.compare(a.ano, b.ano);
     }
 }
 
-class SortEvenFirst implements Comparator {
+class SortEvenFirst implements Comparator<Integer> {
 
-    public int compare(Object obj1, Object obj2) {
+    public int compare(Integer obj1, Integer obj2) {
         // Certifique-se que os objetos são Integer
-        var a = (Integer) obj1;
-        var b = (Integer) obj2;
+        var a = obj1;
+        var b = obj2;
 
         //Verifica de cada número é par
         boolean aIsEven = (a % 2) == 0;
@@ -68,7 +68,7 @@ public class ComparacaoAvancada {
         meusCarros.add(new Carro("Ford", "Mustang", 1970));
 
         // Usa o comparador para classificar os carros
-        Comparator minhaComparacao = new SortByYear();
+        Comparator<Carro> minhaComparacao = new SortByYear();
         Collections.sort(meusCarros, minhaComparacao);
 
         // Mostra os carros
@@ -105,7 +105,7 @@ public class ComparacaoAvancada {
         meusNumeros.add(3);
         meusNumeros.add(50);
 
-        Comparator minhaClassificacao = new SortEvenFirst();
+        Comparator<Integer> minhaClassificacao = new SortEvenFirst();
         Collections.sort(meusNumeros, minhaClassificacao);
 
         meusNumeros.forEach((f) -> { System.out.print(f + ", "); });

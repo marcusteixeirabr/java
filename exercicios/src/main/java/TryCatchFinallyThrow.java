@@ -5,7 +5,7 @@ public class TryCatchFinallyThrow {
         try {
             int[] meusNumeros = {1, 2, 3};
             System.out.println(meusNumeros[10]);
-            int resultado = 10 / 0;
+         //   int resultado = 10 / 0;
 
         /*} catch (ArrayIndexOutOfBoundsException error) {
             System.out.println("Índice de matriz inexistente."); // Vai ser executada a primeira exceção
