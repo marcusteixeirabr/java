@@ -14,6 +14,7 @@
       "extensions": [
         "vscjava.migrate-java-to-azure",
         "vscjava.vscode-java-upgrade",
+        "vmware.vscode-boot-dev-pack",
         "vscjava.vscode-java-pack",
         "vscjava.vscode-gradle",
         "vscjava.vscode-java-debug",
