@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import dio.bootcamp.springboot.primeiros_passos.app.Calculadora;
+
 @Component
 public class MyApp implements CommandLineRunner{
 
