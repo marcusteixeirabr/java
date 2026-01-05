@@ -24,7 +24,5 @@ public class StartApp implements CommandLineRunner {
         for(User u: repository.findAll()) {
             System.out.println(u);
         }
-
-    }
-
+    }   
 }
