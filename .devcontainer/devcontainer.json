@@ -8,6 +8,15 @@
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 
+  // Encaminha a porta do Spring Boot
+  "forwardPorts": [8083],
+  "portsAttributes": {
+    "8083": {
+      "label": "Spring Boot",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
   // Extensões essenciais
   "customizations": {
     "vscode": {
