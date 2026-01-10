@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import dio.handler.BusinessException;
+// import dio.handler.BusinessException;
 import dio.handler.CampoObrigatorioException;
 import dio.model.Usuario;
 
