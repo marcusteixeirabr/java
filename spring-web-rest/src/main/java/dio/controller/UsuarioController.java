@@ -3,7 +3,7 @@ package dio.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import dio.model.Usuario;
-import dio.repository.UsuarioRepository;
+import dio.service.UsuarioService;
 
 import java.util.List;
 
@@ -24,32 +24,31 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class UsuarioController {
 
     @Autowired
-    private UsuarioRepository repository;
+    private UsuarioService service;
 
     @GetMapping()
     public List<Usuario> getUsuarios() {
-        // Lógica para obter a lista de usuários
-        return repository.findAll();
+        return service.getAll();
     }
     
     @GetMapping("/{username}")
     public Usuario getOne(@PathVariable("username") String username) {
-        return repository.findByUsername(username);
+        return service.getByLogin(username);
     }
 
     @DeleteMapping("/{id}")
     public void deleteUsuario(@PathVariable("id") Integer id) {
-        repository.deleteById(id);
+        service.deleteById(id);
     }
 
     @PostMapping()
     public void postUsuario(@RequestBody Usuario usuario) {
-        repository.save(usuario);
+        service.save(usuario);
     }
 
     @PutMapping()
     public void putUsuario(@RequestBody Usuario usuario) {
-        repository.save(usuario);
+        service.save(usuario);
     }
 
 }
