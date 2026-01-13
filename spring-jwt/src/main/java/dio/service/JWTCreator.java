@@ -42,6 +42,7 @@ public class JWTCreator {
         return object;  
 
     }
+    @SuppressWarnings("unused")
     private static List<String> checkRoles(List<String> roles) {
         return roles.stream().map(s -> "ROLE_".concat(s.replaceAll("ROLE_", ""))).collect(Collectors.toList());
     }
