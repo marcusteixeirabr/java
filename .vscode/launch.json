@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SpringJwtApplication",
+            "request": "launch",
+            "mainClass": "dio.SpringJwtApplication"
+        },
+        {
+            "type": "java",
             "name": "SpringWebRestApplication",
             "request": "launch",
             "mainClass": "dio.SpringWebRestApplication",
@@ -28,6 +34,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "dio.bootcamp.springboot.primeiros_passos.PrimeirosPassosApplication",
             "projectName": "primeiros-passos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringJwtApplication<spring-jwt>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.SpringJwtApplication",
+            "projectName": "spring-jwt",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
