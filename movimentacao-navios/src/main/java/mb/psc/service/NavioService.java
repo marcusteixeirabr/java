@@ -34,11 +34,13 @@ public class NavioService {
                 navio.setHorario(cols.get(1).text());
                 navio.setManobra(cols.get(2).text());
                 navio.setBerco(cols.get(3).text());
-                navio.setNavio(cols.get(4).text());
-                navio.setLoa(cols.get(5).text());
-                navio.setBoca(cols.get(6).text());
-                navio.setCalado(cols.get(7).text());
-                navio.setSituacao(cols.get(8).text());
+                navio.setBordo(cols.get(4).text());
+                navio.setNavio(cols.get(5).text());
+                navio.setRota(cols.get(6).text());
+                navio.setLoa(cols.get(7).text());
+                navio.setBoca(cols.get(8).text());
+                navio.setCalado(cols.get(9).text());
+                navio.setSituacao(cols.get(10).text());
 
                 navios.add(navio);
             }

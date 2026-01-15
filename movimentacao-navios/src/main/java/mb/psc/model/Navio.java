@@ -5,7 +5,9 @@ public class Navio {
     private String horario;
     private String manobra;
     private String berco;
+    private String bordo;
     private String navio;
+    private String rota;
     private String loa;
     private String boca;
     private String calado;
@@ -24,8 +26,14 @@ public class Navio {
     public String getBerco() { return berco; }
     public void setBerco(String berco) { this.berco = berco; }
 
+    public String getBordo() { return bordo; }
+    public void setBordo(String bordo) { this.bordo = bordo; }
+
     public String getNavio() { return navio; }
     public void setNavio(String navio) { this.navio = navio; }
+
+    public String getRota() { return rota; }
+    public void setRota(String rota) { this.rota = rota; }
 
     public String getLoa() { return loa; }
     public void setLoa(String loa) { this.loa = loa; }
