@@ -46,6 +46,16 @@
             "projectName": "spring-jwt",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LabPadroesProjetoSpringApplication<lab-padroes-projeto-spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.LabPadroesProjetoSpringApplication",
+            "projectName": "lab-padroes-projeto-spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
