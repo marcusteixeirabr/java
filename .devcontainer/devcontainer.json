@@ -8,10 +8,22 @@
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 
+  // Encaminha a porta do Spring Boot
+  "forwardPorts": [8083],
+  "portsAttributes": {
+    "8083": {
+      "label": "Spring Boot",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
   // Extensões essenciais
   "customizations": {
     "vscode": {
       "extensions": [
+        "vscjava.migrate-java-to-azure",
+        "vscjava.vscode-java-upgrade",
+        "vmware.vscode-boot-dev-pack",
         "vscjava.vscode-java-pack",
         "vscjava.vscode-gradle",
         "vscjava.vscode-java-debug",
@@ -24,17 +36,19 @@
         "java.configuration.runtimes": [
           {
             "name": "JavaSE-21",
-            "path": "/usr/lib/jvm/jdk-21"
+            "path": "/opt/java/openjdk",
+            "default": true
           }
         ],
         "java.import.gradle.enabled": true,
-        "java.maven.downloadSources": true
+        "java.maven.downloadSources": true,
+        "java.jdt.ls.java.home": "/opt/java/openjdk"
       }
     }
   },
 
-  // Opcional: instala ferramentas extras após subir o container
-  "postCreateCommand": "sdkman-init && java -version && mvn -v || true",
+  // Valida ferramentas após subir o container
+  "postCreateCommand": "java -version && mvn -v",
 
   "remoteUser": "root"
 }

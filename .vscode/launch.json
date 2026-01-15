@@ -1,0 +1,71 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SpringJwtApplication",
+            "request": "launch",
+            "mainClass": "dio.SpringJwtApplication"
+        },
+        {
+            "type": "java",
+            "name": "SpringWebRestApplication",
+            "request": "launch",
+            "mainClass": "dio.SpringWebRestApplication",
+            "projectName": "spring-web-rest"
+        },
+        {
+            "type": "java",
+            "name": "SpringDataJpaPostgresApplication",
+            "request": "launch",
+            "mainClass": "dio.aula.SpringDataJpaPostgresApplication",
+            "projectName": "spring-data-jpa-postgres"
+        },
+        {
+            "type": "java",
+            "name": "AulaSpringDataJpaApplication",
+            "request": "launch",
+            "mainClass": "dio.aula.AulaSpringDataJpaApplication",
+            "projectName": "aula-spring-data-jpa"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PrimeirosPassosApplication<primeiros-passos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.bootcamp.springboot.primeiros_passos.PrimeirosPassosApplication",
+            "projectName": "primeiros-passos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringJwtApplication<spring-jwt>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.SpringJwtApplication",
+            "projectName": "spring-jwt",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LabPadroesProjetoSpringApplication<lab-padroes-projeto-spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.LabPadroesProjetoSpringApplication",
+            "projectName": "lab-padroes-projeto-spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MovimentacaoNaviosApplication<movimentacao-navios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "mb.psc.MovimentacaoNaviosApplication",
+            "projectName": "movimentacao-navios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
