@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "dio.Application",
+            "projectName": "santander-dev-week"
+        },
+        {
+            "type": "java",
             "name": "SpringJwtApplication",
             "request": "launch",
             "mainClass": "dio.SpringJwtApplication"
@@ -64,6 +71,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "mb.psc.MovimentacaoNaviosApplication",
             "projectName": "movimentacao-navios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SantanderDevWeekApplication<santander-dev-week>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dio.SantanderDevWeekApplication",
+            "projectName": "santander-dev-week",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
