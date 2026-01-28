@@ -1,11 +1,9 @@
 server:
-    port: 8083
+    port: ${PORT:8080}
 
 spring:
   datasource:
-    url: jdbc:postgresql://${PGHOST:localhost}:${PGPORT:5432}/${PGDATABASE:railway}?sslmode=require
-    username: ${PGUSER:postgres}
-    password: ${PGPASSWORD:password}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/railway?sslmode=require}
     hikari:
       maximum-pool-size: 10
       minimum-idle: 2
