@@ -3,7 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:${DATABASE_URL:postgresql://localhost:5432/railway?sslmode=require}
+    url: ${spring.datasource.url:jdbc:postgresql://localhost:5432/railway}
+    username: ${spring.datasource.username:postgres}
+    password: ${spring.datasource.password:password}
     hikari:
       maximum-pool-size: 10
       minimum-idle: 2
