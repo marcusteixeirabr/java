@@ -21,15 +21,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "vscjava.migrate-java-to-azure",
-        "vscjava.vscode-java-upgrade",
-        "vmware.vscode-boot-dev-pack",
         "vscjava.vscode-java-pack",
-        "vscjava.vscode-gradle",
-        "vscjava.vscode-java-debug",
-        "vscjava.vscode-java-test",
-        "redhat.java",
-        "mhutchie.git-graph",
+        "vmware.vscode-boot-dev-pack",
+        "vscjava.vscode-lombok",
         "eamodio.gitlens"
       ],
       "settings": {
@@ -50,5 +44,5 @@
   // Valida ferramentas após subir o container
   "postCreateCommand": "java -version && mvn -v",
 
-  "remoteUser": "root"
+  //"remoteUser": "root"
 }
