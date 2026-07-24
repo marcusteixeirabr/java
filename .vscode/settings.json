@@ -3,5 +3,8 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.project.sourcePaths": [
         "analisador-texto"
-    ]
+    ],
+    "git.autoRepositoryDetection": "subFolders",
+    "git.openRepositoryInParentFolders": "always",
+    "scm.alwaysShowRepositories": true
 }

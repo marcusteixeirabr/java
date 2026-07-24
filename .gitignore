@@ -90,4 +90,6 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
-# End of https://www.toptal.com/developers/gitignore/api/maven,java,gradle,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/maven,java,gradle,visualstudiocodeanalisador-texto/
+
+analisador-texto/
