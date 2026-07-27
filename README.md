@@ -1,108 +1,79 @@
 # ☕ Projetos de Estudo em Java
 
-Este repositório reúne meus projetos pessoais de estudo em **Java**, desde exercícios básicos até miniaplicações mais completas.  
-O objetivo é acompanhar minha evolução, praticar conceitos fundamentais da linguagem e explorar diferentes tecnologias do ecossistema Java.
+Este repositório reúne meus projetos pessoais e acadêmicos de estudo em **Java**, documentando minha evolução desde a lógica de programação fundamental até o desenvolvimento de APIs robustas com o ecossistema Spring.
+
+O objetivo principal é consolidar conceitos de orientação a objetos, persistência de dados, segurança e arquitetura de software.
 
 ---
 
-## 🚀 Tecnologias & Ferramentas
+## 🚀 Tecnologias, Frameworks & Ferramentas
 
-- **Java 17+ / Java 21**
-- **JDK Temurin** (Eclipse Adoptium)
-- **VS Code / Dev Containers**
-- Maven ou Gradle (dependendo do projeto)
-- JUnit para testes simples
+O repositório reflete uma jornada de aprendizado que utiliza:
 
----
-
-## 📁 Estrutura do Repositório
-
-Cada pasta representa um pequeno projeto independente:
-
-projeto-1/
-projeto-2/
-exemplos/
-desafios/
-algoritmos/
-
-
-Dentro de cada projeto você encontrará:
-
-- Código fonte (`src/`)
-- Arquivo de build (Maven ou Gradle)
-- README específico (quando necessário)
+* **Linguagem:** Java 17+ / Java 21 (JDK Temurin via Dev Containers)
+* **Frameworks:** Spring Boot (Data JPA, Web, Security, JWT)
+* **Banco de Dados:** PostgreSQL (Integração com Spring Data)
+* **Testes:** JUnit 5
+* **Gerenciadores de Build:** Gradle e Maven
 
 ---
 
-## 📚 O que estou estudando aqui
+## 📂 Estrutura do Repositório
 
-- Sintaxe básica da linguagem  
-- Estruturas de dados (List, Set, Map)  
-- Orientação a Objetos (POO)  
-- Java Collections Framework  
-- Streams API  
-- Manipulação de arquivos  
-- Organização de projetos  
-- Miniaplicações de treino  
+O repositório é categorizado por módulos de estudo e projetos práticos:
+
+### 🧩 Fundamentos & Lógica
+* `Exercicios/`, `OperadoresAritmeticos/`: Laboratórios de sintaxe e operadores.
+* `Equacao2Grau/`, `ProgramaParImpar/`, `VerificaIdade/`: Algoritmos e estruturas condicionais/matemáticas simples.
+
+### 🌐 Ecossistema Spring Boot & APIs
+* `aula-spring-data-jpa/`, `spring-data-jpa-postgres/`: Persistência de dados com ORM e queries relacionais.
+* `spring-web-rest/`: Construção de endpoints e arquitetura RESTful.
+* `spring-jwt/`: Implementação de autenticação e autorização segura com tokens JWT.
+* `lab-padroes-projeto-spring/`: Aplicação de Design Patterns (Singleton, Strategy, Facade) no ecossistema Spring.
+
+### 🏆 Desafios, bootcamps & Projetos Práticos
+* `DIO/`: Desafios de código e exercícios da plataforma Digital Innovation One.
+* `santander-dev-week/`: Projeto prático de API construído durante o bootcamp do Santander.
+* `desafio_metalmecanico/` & `movimentacao-navios/`: Aplicações simulando regras de negócio e cenários do mundo real.
+* `lab-padroes-projeto-java/`: Prática de padrões de projeto em Java puro.
+* `junit/`: Casos de teste automatizados para validação de código.
 
 ---
 
-## 🛠️ Comandos Java Essenciais
+## 🛠 Comandos Java Essenciais
 
-Aqui vai um mini-guia rápido para compilar e executar arquivos Java pelo terminal.
+Mini-guia rápido para compilar e executar arquivos Java puros pelo terminal:
 
-### **Compilar um arquivo `.java`**
+### **Compilar um arquivo único**
 ```bash
-javac NomeDoArquivo.java`
+javac NomeDoArquivo.java
 ```
 
-Executar um programa compilado
+### **Executar um programa compilado**
 ```bash
 java NomeDoArquivo
 ```
-Compilar vários arquivos
-```bash
-javac src/*.java
-```
 
-Executar especificando o classpath
-```bash
-java -cp src Main
-```
-Ver a versão instalada
+### **Verificar versões instaladas**
 ```bash
 java -version
 javac -version
 ```
 
-💡 Como rodar os projetos
+_Nota: Para os projetos baseados em ecossistema Spring/Gradle, utilize o wrapper incluso na pasta raiz (`./gradlew bootRun`)._
 
-Cada projeto possui instruções próprias, mas em geral:
+---
 
-1. Abra o diretório do projeto
-2. Compile e execute com:
-```bash
-javac src/*.java
-java -cp src Main
-```
+## 🎯 Objetivo do Repositório
 
-3. Ou simplesmente abra no VS Code e execute pelo botão "Run".
+Este repositório funciona como um histórico público de evolução técnica. Sinta-se à vontade para explorar os pacotes, analisar as implementações de padrões de projeto e o uso de segurança em APIs.
 
-🧩 Objetivo do Repositório
+---
 
-Este repositório serve como:
-- Meu portfólio pessoal de aprendizado em Java
-- Um espaço para experimentar novas ideias
-- Um "diário" de evolução como desenvolvedor
-- Um repositório público para ajudar outros iniciantes
+## 📬 Contato
 
-Sinta-se à vontade para explorar, dar sugestões ou abrir issues! 😊
+Se quiser trocar uma ideia sobre Java, Spring Boot ou desenvolvimento de software:
 
-📬 Contato
-
-Se quiser trocar uma ideia sobre Java, Dev Containers ou programação no geral:
-
-
-🔗 GitHub: marcusteixeirabr
-
-📧 E-mail marcusteixeirabr@gmail.com
+* **GitHub:** [marcusteixeirabr](https://github.com/marcusteixeirabr)
+* **E-mail:** marcusteixeirabr@gmail.com
